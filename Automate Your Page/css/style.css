@@ -1,0 +1,44 @@
+/* In all HTMl file */
+* {
+	font-family: Helvetica;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Headerpage in the HTMl file */
+#pageheader {
+	font-weight: bold;
+	color: white;
+	background: #1A1A80;
+	border-radius: 0.3125em;
+	padding-left: .2em;
+}
+
+.sectiontitle {
+	text-decoration: underline;
+}
+
+/* All lessons in the HTMl file */
+.lesson {
+	background: #1A1A80;
+	padding: 0.3125em;
+	border-radius: 0.3125em;
+	color: white;
+	margin-bottom: .2em;
+}
+
+/* All notes in the HTMl file */
+.note {
+	background-color: #D6F5FF;
+	border-radius: 0.3125em;
+	padding: .2em;
+	margin: .2em;
+	color: black;
+}
+
+/* All examples in the HTMl file */
+.example {
+	font-weight: bold;
+}
