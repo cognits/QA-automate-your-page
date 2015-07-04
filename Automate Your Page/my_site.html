@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <!-- UTF-8 -->
+    <meta charset="UTF-8">
+    <title>Kar Notes</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="pageheader">
+        <h1>Notes</h1>
+    </div>
+    
+
+    <div class="lesson">
+        <!-- Lesson 0: HTML -->
+        <div class="sectiontitle">
+            <h2>Lesson 0</h2>
+        </div>
+
+        <div class="note">
+            <h3>HTML</h3>
+            <p>
+              HTML stands for HyperText Markup Language. It is the foundation of all web pages and allows for all web design and implimentation of images, videos, links, etc.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Hyperlinks/Links</h3>
+            <div class="example">
+                &lta href="www.website.com">What is visible&lt/a>
+            </div>
+            <p>
+              Hyperlinks (commonly referred to as links) connects the web. Links are paths to other pages or specific parts of a page.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Tags</h3>
+            <p>
+              Tags help change generic text in HTML documents.Tags can be used to create links, bold or italicize words, seperate certain instances oftext so they can receive a style and much more. Tags outline elements.Some tags require to be closed while void tags, which are used for images and break, do not.Tags can also have attributes which change the way the tag functions.
+            </p>
+            <div class="tags">
+                <em> Some Tags:</em>
+                <ul>
+                    <li>b - bold</li>
+                    <li>em - italic</li>
+                    <li>a - can have attributes and is typical shown as: a href="website", creates links</li>
+                    <li>br - creates a newline, void</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="note">
+            <h3>Elements</h3>
+            <p>
+              Elements are what HTML documents are made of. They are seperated by tags.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Inline vs Block</h3>
+            <p>
+              Elements in HTML can be either inline or block. If they are block thereis an invisible box around the element.
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 1: HTML vs CSS -->
+        <div class="sectiontitle">
+            <h2>Lesson 1</h2>
+        </div>
+
+        <div class="note">
+            <h3>HTML vs CSS</h3>
+            <p>
+              HTML is the basic structure and the content of a web page. CSS is the style in which the HTML is presented.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>CSS</h3>
+            <p>
+              CSS, also known as Cascading Style Sheets, controls font, size, border, position, margins, orientation and much more.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Document Object Model</h3>
+            <p>
+              Document Object Model or DOM is a cross platform convention for language. Things are ordered in a tree like structure to represent how elements interact with each other. This method of organization bears strong resemblance to a family tree with branches having the ability to inherit
+              traits.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Boxes</h3>
+            <p>
+              Every element in an HTML file is represented by boxes. Text, boxes. Images, boxes. Circles, boxes. HTML makes the boxes. CSS is used to mix, match and even overlap these boxes in creating a web page.
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 2: Adding Style -->
+        <div class="sectiontitle">
+            <h2>Lesson 2</h2>
+        </div>
+
+        <div class="note">
+            <h3>Adding Style</h3>
+            <p>
+              Style is added to an HTML page through a CSS page. Use a period before classes (.note, .sectiontitle) a hashtag/pound sign before ids (#pageheader) and nothing prior to tags (p, div). Weave them together such as h.sectionheader to change the style on a specific part of a class.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>CSS - Inheritance</h3>
+            <p>
+              Inheritance is the process with which nested elements recieve style because they are part of an overarching element. For example you can make all the text in an html file appear as a certain font and then change the size of the font for each individual tag, class or id. Inheritance allows for less code and repetition.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Margin, Border, Padding, Content</h3>
+            <p>
+              Every element has multiple layers which make up the total element. There is the content which could be a video, text, image, etc. Then there is the padding which expands the box and inherits color of the box/content background color. The border surrounds the padding and also inherits the background color. However the color and design can be changed causing a definitive border. The margin is the space an element requires before running into another element. This helps seperate elements. 
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Box-Sizing: Border-Box</h3>
+            <p>
+              Browser specific prefixs may be necessary for this newer technique. Using border-box lets you set the size of the whole box in either percentage or pixels. This includes the border, padding and content.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Flexbox</h3>
+            <div class="example">
+              display: flex
+            </div>
+            <p>
+              Flexbox is a tool used to position boxes. Flexbox allows for boxes to be position next to each other rather than just in a list format. Apply display:flex and change the size percentage of the box to allow for boxes to position next to each other.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Images</h3>
+            <div class="example">
+                &ltimg src="folder/name" alt="random">
+            </div>
+            <p>
+            Store an image in a place that the HTML document can access it (folder for images in the website folder). In case the image has trouble loading add an alt attribute.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Devtools</h3>
+            <p>
+              DevTools can be used to tweak a page to get an idea of what you may want to permanently change on a page. After any tweaks you can simply refresh the page to have the page return to its original form.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Repetition</h3>
+            <p>
+              One of the biggest parts of coding is avoiding repetitive code. That is why CSS, classes and other such things exist. CSS allows you to style large chunks of code all at once. Likewise, classes allow you to style multiple sections of code that are of that class. There are a lot of things you can do to reduce the amount written and to streamline your code.
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 3: Programs -->
+        <div class="sectiontitle">
+            <h2>Lesson 3</h2>
+        </div>
+
+        <div class="note">
+            <h3>Programs</h3>
+            <p>
+              Programs are anything that tell a computer what to do; how complicated or simple it is does not matter. Web pages, games and operating systems are all examples of programs.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>High Level Languages</h3>
+            <p>
+              High level languages exist as a non ambigious language platform. Spoken languages such as English are far too ambigious to tell a computer what to do. As stated prior, computers will only do what they are told so code can not be ambigious. This is in both the way the syntax is, and how it is used. Expressions such as 2 + 2 + will end up causing an error as it is not a proper expression.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Expressions</h3>
+            <p>
+              Code is made up of expressions which are the "grammatical" foundation of the language, similiar to sentences. Can be as simple as 2 + 2 or much more complicated like ((123 * 526) + 231) - 326 and beyond. Structure will not always be numeric.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Limits of Computers</h3>
+            <p>
+              Computers are inherently limited by the speed that data can be moved. Data can be moved at a speed close to light and because of this hard limit computers have been getting smaller. The smaller the computer the less distance the data must travel allowing for quicker computations.
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 4: Variables-->
+        <div class="sectiontitle">
+            <h2>Lesson 4</h2>
+        </div>
+
+        <div class="note">
+            <h3>Variables</h3>
+            <p>
+              Variables are one of the main concepts in programming. With an assignment operator you can give a variable (letters or words) a value. That value is then stored and can be used or modified. Variables are used to clarify code and store data.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Assignment Operator</h3>
+            <div class="example">
+              variable = expression
+            </div>
+            <p>
+              Unlike in typical arithmetic, the equal sign (=) is used as an assignment operator in python and other programming languages. It is used to give a variable a value. 
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Strings</h3>
+            <p>
+              Strings are characters surrounded by single or double quotations. They can be stored in variables. Anything within the quotations will not be read as an expression. 
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Concatenation</h3>
+            <div class="example">
+              string + string == stringstring
+            </div>
+            <p>
+              Concatenation is the method of joining strings. "This is " + "an example." Will concatenate into "This is an example." Take care to realize when you are concatenating or adding as the symbol is the same and the process is determined by whether numbers or strings are used.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Indexing</h3>
+            <div class="example">
+              "index"[0] == i
+            </div>
+            <p>
+              Indexing is the method with which to give strings a numeric reference. You can index a string or a variable that is storing a string. The first character in a string is at the 0 position. Using [n:x] you can specify a section of a string that you would like to retrieve. [n:] Takes everything starting at n. [:n] Takes everything for n. [:] Takes the whole string. [n:x] Starts at n and takes up to, but not including, x. Indexing can also start from the back of the string with negative numbers starting at -1.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Find</h3>
+            <div class="example">
+              string.find(x,n)
+            </div>
+            <p>
+              Find compares a given set of characters to a string. If it finds the set of charcters in the string it will give you the position of the first character. If it does not find anything it will return -1. At x is what find will look for in the string and n is the position at which it will start looking. You can find with a string or a variable.
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 5: Functions -->
+        <div class="sectiontitle">
+            <h2>Lesson 5</h2>
+        </div>
+
+        <div class="note">
+            <h3>Functions</h3>
+            <div class="example">
+              def functionname(parameters)
+            </div>
+            <p>
+              Functions or procedures are code that receives an input, works with it and then returns an output. You call a function with an input. Functions can be called multiple times meaning you can code something then use it repeatedly, helping eliminate repetition and simply code.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Making vs Using a Function</h3>
+            <p>
+              Functions must be defined. In this definition the function is coded to perform a task. However just creating a function does not actually fulfill the task. You must use the function, normally with an input, so that the function executes and performs the task.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Importance of Return</h3>
+            <p>
+              Without return a function may do nothing at all. It can execute addition in a sum function but then by never returning the value, it "forgets" the changed value and for the program it is like the function was never called. Functions can do things such as print but to save a value it must be returned. 
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 6: Making Decisions -->
+        <div class="sectiontitle">
+            <h2>Lesson 6</h2>
+        </div>
+
+        <div class="note">
+            <h3>Making Decisions</h3>
+            <p>
+              Python has a number of operands used to return a boolean datatype of True or False. There are many different types of comparison such as:
+              <ul>
+                <li>> - greater than</li>
+                <li>>= - greater than or equal to</li>
+                <li>< - less than</li>
+                <li><= - less than or equal to</li>
+                <li>== - equal to</li>
+                <li>!= is not equal to</li>
+              </ul>
+              There are also logical structures such as and, or and not that can be used in comparisons.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>If-else</h3>
+            <p>
+              If or if-else statements execute code if a condition is met. In an if else code will also be executed if the if statement is False.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>While loops</h3>
+            <p>
+              Unlike if statement which will only execute 0 or 1 times, while loops execute as long as the condition is True. This means that if the condition does not change to False, the loop will continue forever. While loops can also be stopped by a break input.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Debugging</h3>
+            <p>
+              Making mistakes in code is something that happens to everyone. One of the most important skills to have is to be a good debugger. This means figuring out what is wrong with code and solving. This often happens by breaking up and seeing what each part of the code does. However, sometimes when correcting code your code will become less correct that the original. It is important to keep variations of code even after figuring out a variant that works.
+            </p>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <!-- Lesson 7: Lists -->
+        <div class="sectiontitle">
+            <h2>Lesson 7</h2>
+        </div>
+
+        <div class="note">
+            <h3>Lists</h3>
+            <div class="example">
+                list = []
+            </div>
+            <p>
+              Lists are one of the most powerful storage containers in Python. They are a mutable structure that can hold things like variables, numbers, strings and even other lists. Individual aspects of a list can be changed while not becoming a new, copied list.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Index</h3>
+            <div class="example">
+              list[0]
+            </div>
+            <p>
+              Indexing in lists grabs the position of an element in a list. You can using slicing with these indexes to grab certain items in a list. Indexing starts at the 0 position.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Mutation vs Copied</h3>
+            <p>
+              While lists can be mutated they can also be copied and will be with certain functions. When concatenating two lists a new list is created to hold the elements. Changing specific values at certain indexes or using a function such as .append mutates the list into holding new or more elements.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Finding Length</h3>
+            <div class="example">
+                len("string")
+            </div>
+            <p>
+              To find the length of an element such as a string or list the 'len' function is used. It will return the number of items in a list or characters in a string.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>In</h3>
+            <div class="example">
+              if x in y
+            </div>
+            <p>
+              The function 'in' is used in a boolean fashion. If x can be found in y, True will be returned. Otherwise it will return False. This can be used to find a certain word in a long string or a certain element in a list.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Defensive Programming</h3>
+            <p>
+              Defensive programming is the practice of desigining code so that it can deal with circumstances that were unintended and allows for the program to continue running instead of crashing.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>Problem Solving</h3>
+            <p>
+              Problem solving is a vital process to coding. When trying to figure out how to code or deal with a problem, you need to break it down into several steps. Figure out the input and the output. Write some pseudocode to get an idea of how to structure the code. Then you pick the foundation of the code and begin. After every part extensive testing should be done to ensure the code functions as intended.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
