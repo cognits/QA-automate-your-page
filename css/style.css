@@ -1,0 +1,36 @@
+body {
+	font-family:Arial;
+	color: #000000;
+	background: #ffffff;
+	text-align: left;
+	margin: 15px;
+	padding:25px
+}
+/*The class header contains the properties of shapes and margins 
+of letters and picture header page*/
+.header {
+	font-size: 40px;
+	text-align: center;
+	border-radius: 20px;
+	background: #000000;
+	color: #ffffff;
+}
+/*Subheader class contains the properties of styles, colors, 
+shadows and margins of the box content of the page*/
+.subheader {
+	font-size: 25px;
+	font-family: sans-serif;
+	box-shadow: 0 0 1em #0000ff;
+	margin: 10px;
+	padding:10px;
+	border-radius: 20px
+}
+/*The text class contains properties of styles, shadows 
+and margins of the box content of the page*/
+.Text{
+	box-shadow: 0 0 1em #0000ff;
+	margin: 15px;
+	padding:35px;
+	border-radius: 20px
+}
+
