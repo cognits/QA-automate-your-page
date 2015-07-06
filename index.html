@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--Use of meta tags for special characters-->
 	<meta charset="UTF-8">
+	<!--CSS file called-->
 	<link rel="stylesheet" href="css/style.css">
   	<title>Automate Your Page</title>
 </head>
 <body>
+	<!--The header, all headers class are major titles in the project-->
 	<div class= "header">Contents</div>
-	 	<div class= "subheader">
-	 		<ul>
-		 		<li><a id="Python" href="#PythonIntro">Python and Computer Science Intro</a></li>
-				<li><a id="VariablesAndFunctions" href="#VariablesFunction">Variables, Strings and Functions</a></li>
-		 		<li><a id="Lists" href="#Lists">Lists</a></li>
-		 		<li><a id="Problems" href="#ProblemSolving">Problem Solving</a></li>
-		 	</ul>
-	 	</div>
-		<div class = header id="PythonIntro">
+		<!--Subheader class is the one that contains all the content in the pictures entered in my project-->
+		<div class= "subheader">
+			<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+			<ul>
+				<li><a href="#PythonIntro">Python and Computer Science Intro</a></li>
+				<li><a href="#VariablesFunction">Variables, Strings and Functions</a></li>
+				<li><a href="#Lists">Lists</a></li>
+				<li><a href="#ProblemSolving">Problem Solving</a></li>
+			</ul>
+		</div>
+		<!--The header, all headers class are major titles in the project-->
+		<div class= "header">
 			Python and Computer Science Intro
 		</div>
+		<!--The text class contains all text or paragraphs in the document entered-->
 		<div class= "Text">
 			<p>Sometimes it can be difficult to know where to start with a computer program as there is so much to complete. First you must break down the problem into smaller pieces and tackle each as their own entity. With code you can precicely describe the steps required to solve the problem and these steps can be completed by a computer! <b>A computer is just a machine that can be programmed</b>, and it can do almost anything so long as a program is written that can tell it what to do!</p>
 			<p>Remember that a program really is nothing more that a very specific set of instruction.
@@ -25,88 +32,158 @@
 			<p> At first it may seem strange that we need new languanges in order to tell a computer what do to, but this is due to a number of inherant problems with languages such as English; primarily they are too ambiguous and verbose! So there are a number of programming languages out there to learn that will enable a person to write instructions, or a "program", that will tell a computer what to do.</p>
 			<p>Python is a relatively each programming lanugage to start learning and that is what we are going to do next. Writing code in Python means it can be understood by anybody who knows the Python language, but for a computer to understand it the python code must me translated into something a machine can understand. That is what the Python <b>interpreter</b> does, which incidentally is also a <b>program</b>. Python like any other lanuague has a highly defines structure and grammer, which means you must write your code exactly how the Python interpreter expects (or understands it). This of course removes the problem of amiguity.</p>
 		</div>
-		<div class= "header" id="VariablesFunction">Variables, Strings and Functions
-		</div>
+		<!--The header, all headers class are major titles in the project-->
+		<div class= "header">Variables, Strings and Functions</div>
+		<!--The text class contains all text or paragraphs in the document entered-->
 		<div class= "Text">
-			<h1>variables</h1>
+			<h1>Variables</h1>
 			<p>Using a Veriable you can create a name and assign a value to that name. The value of the variable can change depending on what you assign to it, and that assignement may change during code execution i.e. "variables can vary". You use the name of the variable within your code statements, and the execution result will look at the value currently held by that variable. You assign a variable by: Name = Expression.</p>
 			<p>Also remember that when working with programming languages, "=" does not mean equal to. Instead it means "asssignment"! In addition, common practice suggests that variables should never start with a Capital letter.</p>
 		</div>
-
-		<div class= "header" id="VariablesFunction">Strings
+		<!--The header, all headers class are major titles in the project-->
+		<div class= "header">
+			Strings
 		</div>
+		<!--The text class contains all text or paragraphs in the document entered-->
 		<div class= "Text">
 			<h1>Strings</h1>
 			<p>Strings are one of the most important data types in computer languages. That is why we dedicate a whole chapter to working with strings in Python.</p>
 			<p>Strings are derived data types. A string in Python is a sequence of characters. Strings are immutable. This means that once defined, they cannot be changed. Many Python methods modify strings. For example the replace() method. They do not modify the original string. They create a copy of a string, which they modify and return to the caller.</p>
 		</div>
-	<div class = subheader>Input, Function, Output</div>
+		<!--The text class contains all text or paragraphs in the document entered-->
 		<div class= "Text">
-			<p>When defining a function you will specify the name of the procedure and then within parentheses you will specifiy the name(s) of the inpute to the function. Next you will specity the return value of the procedure, for example:<br><br>
-			def rest_of_string(s):
-				return s[1:]
-			<br> This procedure will simply take a string as an input and output the same string with the first letter removed.<br>
-			Remember that any variable assignments within a function will apply within that function only, to use it outside of the funtion the result value must be included in a return value or an output. If there is no return value or output, then the function will actually do nothing at all...well, nothing that you can see anyway!<br><br>
-			A function is designe to take one or more inputs, performs a desired action upon those inputs and then produce an Output. For example, the action could be to concatenate 3 strings and you would pass in those strings to the function. For example:<br><br>
-			def concat(string1, string2, string3):
-				return string1+string2+string3
-				<br>
-			When using the procedure you would provide the strings to concatenate, such as:<br>
-			concat(Add, These, Together); this would output "AddTheseTogether" <br><br>
-			The purpose of functions is simply to save time coding repetitive actions or repeating code, you can call the function as and when you need it throughout your application.<br>
-			</p>
-			<p> This is a small function that will automatically create HMTL:<br>
-			# Write a function that takes a concept title and <br>
-			# a concept description as input and then returns<br>
-			# HTML that you can copy and paste into your notes <br>
-			# web page.<br>
-			<br>
-			def HTMLGen(title, desc):<br>
-    		return '< div class = header>'+title+'''< /div><br>
-                < div class = text'>'''+desc+'< /div>'<br>
-                <br><br>
-			print HTMLGen('Auto Gen HTML', 'This is a function to automatically create HMTL')
-			</p>
-			<p><a href = "#Top">TOP</a></p>
+			<h1>Input, Function, Output</h1>
+			<p>Functions are "self contained" modules of code that accomplish a specific task. Functions usually "take in" data, process it, and "return" a result. Once a function is written, it can be used over and over and over again. Functions can be "called" from the inside of other functions.</p>
+			<p>Functions <b>"Encapsulate"</b> a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don't care how a function does what it does, only that it <b>"does it"!</b></p>
+			<p>When a function is "called" the program <b>"leaves"</b> the current section of code and begins to execute the first line inside the function. Thus the function <b>flow of control"</b>" is:</p>
+			<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+			<ol>
+				<li>
+					<p>The program comes to a line of code containing a <b>"function call"</b>.</p>
+				</li>
+				<li>
+					<p>The program enters the function (starts at the first line in the function code).</p>
+				</li>
+				<li>
+					<p><b>All instructions</b> inside of the function are executed from top to bottom.</p>
+				</li>
+				<li>
+					<p>The program leaves the function and goes back to where it started from.</p>
+				</li>
+				<li>
+					<p>Any data computed and <b>RETURNED</b> by the function is used in place of the function in the original line of code.</p>
+				</li>
+			</ol>
+			<h2>Why do we Write Functions?</h2>
+			<ol>
+				<li>
+					<p>They allow us to conceive of our program as a bunch of sub-steps. <b>(Each sub-step can be its own function. When any program seems too hard, just break the overall program into sub-steps!)</b></p>
+				</li>
+				<li>
+					<p>They allow us to reuse code instead of rewriting it.</p>
+				</li>
+				<li>
+					<p>Functions allow us to keep our variable namespace clean (local variables only "live" as long as the function does). In other words, function_1 can use a variable called i, and function_2 can also use a variable called i and there is no confusion. Each variable i only exists when the computer is executing the given function.</p>
+				</li>
+				<li>
+					<p>Functions allow us to test small parts of our program in isolation from the rest. This is especially true in interpreted langaues, such as <b>Matlab</b>, but can be useful in <b>C, Java, ActionScript, etc.</b></p>
+				</li>
+			</ol>
+			<h2>Steps to Writing a Function</h2>
+			<ol>
+				<li>
+					<p>Understand the purpose of the function.</p>
+				</li>
+				<li>
+					<p>Define the data that comes into the function from the caller <b>(in the form of parameters)!</b></p>
+				</li>
+				<li>
+					<p>Define what data variables are needed inside the function to accomplish its goal.</p>
+				</li>
+				<li>
+					<p>Decide on the set of steps that the program will use to accomplish this goal. <b>(The Algorithm)</b></p>
+				</li>
+			</ol>
+			<!--The h2 tag, I use to put the subtitles in the document-->
+			<h2>Inputs</h2>
+			<!--The text class contains all text or paragraphs in the document entered-->
+			<p>Input usually means the data entered by the end-user of the program. When you use Microsoft Word, you are playing the role of the end-user (sometimes shortened to just plain 'user'). When you play a video game, you are its <b>'end-user'</b>.</p>
+			<p>Python has two key functions to deal with end-user input, one called raw_input() and one called input(). When a program is running and these functions are called, the system will freeze, waiting for the end-user to enter something.</p>
+			<p>When the user enters something and hits 'enter', a string is returned from these functions. So on execution of the statement:</p>
+			<p><b>result = raw_input()</b></p>
+			<p>Python will wait for the end-user to enter something. If the user types in abc, then the variable result will have 'abc' in it.</p>
+			<p>Generally, we want to prompt the user for input. You can do this by adding a parameter to the 'raw_input()' call. If you were asking a person's name, you'd write the statement:</p>
+			<p><b>name=raw_input('please enter your name:')</b></p>
+			<!--The h2 tag, I use to put the subtitles in the document-->
+			<h2>Outputs</h2>
+			<!--The text class contains all text or paragraphs in the document entered-->
+			<p>is what the program produces. For command-line programs, it's just whatever is printed on the screen. Of course for programs with graphical user interfaces, the output is much more complex.</p>
+			<p>In Python, the <b>print</b> statement is used for command-line output:</p>
+			<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+			<ul>
+				<li>
+					<p><b>print 45</b>     #just prints the number 45</p>
+				</li>
+				<li>
+					<p><b>print 'my mother said'</b>     #prints the words without the quotes</p>
+				</li>
+			</ul>
 		</div>
-	</div>
-	<div class = subheader>If and While</div>
+		<!--The text class contains all text or paragraphs in the document entered-->
 		<div class= "Text">
-			<p>	def bigger(a,b):<br>
-    		number = b<br>
-    		if a >= b:<br>
-        	number = a<br>
-    		return number<br>
-		    The test expression determines whether or not we will execute the code within the block.<br>
-		    When using the OR operand, if the first value equates to True then the second value is not evaluated.
-		    <br><br>
-		    The contruct of an if statement is as follows:<br>
-		    IF< expression>:<br>
-		    	< block><br><br>
-		    The block will only execute if the IF statement evaluates to TRUE.<br><br>
-		    NOTE: You MUST get the indentention correct in Python!<br>
-			</p>
-			<p> The structure of IF and WHILE LOOPS are pretty much the same, the key difference being that the IF code block will only execute once (if the test condition equates to TRUE), whilst the WHILE loop will keep executing the code block as long as the test condition continues to evaluate to TRUE.<br><br>
-			The contruct of an if statement is as follows:<br>
-		   		WHILE< expression>:<br>
-		    		< block><br><br>
-			BREAK gives us a way to stop the loop, even when the test condition is TRUE.<br>
-		   		WHILE< expression>:<br>
-		    		< block><br>
-		    		IF < Break Test><br>
-		    			break<br>
-		    		< more code><br>
-		    	< After While><br><br>
-			<p><a href = "#Top">TOP</a></p>
-			</p>
+			<!--The h2 tag, I use to put the subtitles in the document-->
+			<h2>Loops If and While</h2>
+			<p>A <b>"While"</b> Loop is used to repeat a specific block of code an unknown number of times, until a condition is met. For example, if we want to ask a user for a number between 1 and 10, we don't know how many times the user may enter a larger number, so we keep asking <b>"while the number is not between 1 and 10"</b>. If we (or the computer) knows exactly how many times to execute a section of code <b>(such as shuffling a deck of cards)</b> we use a for loop.</p>
+			<h2>Why While Loops?</h2>
+			<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+			<ol>
+				<li>
+					<p>Like all loops, <b>"while loops"</b> execute blocks of code over and over again.</p>
+				</li>
+				<li>
+					<p>The advantage to a while loop is that it will go (repeat) as often as necessary to accomplish its goal.</p>
+				</li>
+				<li>
+					<p>Generic Syntax:</p>
+				</li>
+			</ol>
+			<p><b>while ( condition is true )
+			<!--Some characters are reserved in HTML.-->
+				&nbsp;&nbsp;&nbsp;&nbsp;do something<br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;% Note: the "something" should eventually result<br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;% in the condition being false<br>
+				end</b></p>
+			<h2>The IF statement</h2>
+			<p>In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement, which has the genaral form:</p>
+			<p><b>if boolean expressions:<br>
+			<!--Some characters are reserved in HTML.-->
+			&nbsp;&nbsp;&nbsp;&nbsp;statements</b></p>
+			<h2>A few important things to note about if statements:</h2>
+			|<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+			<ol>
+				<li>
+					<p>The colon <b>(:)</b> is significant and required. It separates the <b>header</b> of the <b>compound statement</b> from the <b>body</b>.</p>
+				</li>
+				<li>
+					<p>The line after the colon must be indented. It is standard in Python to use four spaces for indenting.</p>
+				</li>
+				<li>
+					<p>All lines indented the same amount after the colon will be executed whenever the <b>BOOLEAN_EXPRESSION</b> is true.</p>
+				</li>
+			</ol>
+			<p>Here is an example:</p>
+			<p><b>food = 'spam'<br>
+			if food == 'spam':<br>
+			<!--Some characters are reserved in HTML.-->
+				&nbsp;&nbsp;&nbsp;&nbsp;print('Ummmm, my favorite!')<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;print('I feel like saying it 100 times...')<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;print(100 * (food + '! '))</b></p>
+			<p>The boolean expression after the if statement is called the condition. If it is true, then all the indented statements get executed. What happens if the condition is false, and food is not equal to <b>'spam'?</b> In a simple if statement like this, nothing happens, and the program continues on to the next statement.</p>
 		</div>
-		
-	<div class = subheader>Debugging!</div>
 		<div class= "Text">
-			<p> When using example code always test it to make sure it works properly to begin with. If you have problems and need to debug your own code, just comment it out to begin with so when you get it working you will be able to see where you went wrong to begin with and learn from it.<br><br>
-			Sometimes is is also helpful when debugging code to introduce print statements so that you can see what variables are set to at various points throughout your code. This can help identify where the problem is.<br>
-			<br>
-			Debuigging Strategy:
+			<h2>Debugging!</h2>
+			<p>When using example code always test it to make sure it works properly to begin with. If you have problems and need to debug your own code, just comment it out to begin with so when you get it working you will be able to see where you went wrong to begin with and learn from it. Sometimes is is also helpful when debugging code to introduce print statements so that you can see what variables are set to at various points throughout your code. This can help identify where the problem is.<p>
+			<h2>Debuigging Strategy:</h2>
 			<ol>
 				<li>Examine error messages when programs crash
 				<li> Work from example code
@@ -114,80 +191,25 @@
 				<li> Check (print) intermediate results
 				<li> Keep and compare old versions
 			</ol>
-			<br><br>
-			<p><a href = "#Top">TOP</a></p>
 		</div>
-<div class = header ID = "Lists">Lists</div>
-	<div class= "text">
-		<p> A list can store a number of items separated by a comma.<br><br>
-			< list> [< expression>,< expression>,....]<br><br>
-			Remember that lists are orders, so it is important you place items in the order you want them.<br>
-			Lists can contain more lists and the data types can be mixed, where as strings can only contain characters.<br>
-			Remember that the index of the list always starts from 0.<br>
-		</p>
-		<p> Lists provide us with a way of putting data into an ordered structure and are mutable whereas strings are not. What they basically means is that <b>you can change elements within a list</b> but not a string. However, be careful because if more than one variable references the same list, changing (mutating) the list using one variable will also change the list for all other variables that reference the same list!<br><br>
-		To change a value in a list:<br>
-		p = 'H', 'e', 'l', 'l', 'o' <br>
-		p[0] = Y <br>
-		now p = 'Y', 'e', 'l', 'l', 'o'
-		<br>
-		</p>
-		<p> Two different ways of referencing the same object is called 'Aliasing'.<br><br>When altering lists within a procedure, you do no need to 'return' the result, since you will be directly mutating the list itself. The reason this does not work with string assignments is that strings are non-mutable i.e. you can't change it, so instead you change the value that the new variable in the procedure refers to, which in turn means you need to return that value from the procedure.
-		</p>
-		<p> Append will create a new element on the end of an existing list and reference the appended object. That object could be a single element, but it could equally be another list. Either way, it will only result in ONE additional element on the end of the original list.<br><br>
-		To append:<br>
-		< list>.append(< element>)<br><br>
-		Append is a method that will mutate the list it is invoked upon. It is not creating a new list and you do not need to 'return' anything, the list itself will be modified.<br><br>
-		Using "+" will actually concatenate the objects and create a new object, so the concatenation of two lists with two elements each, will result in a new list containing 4 elements. If you use this in a procedure then you would need to return the result of the concatenation otherwise nothing will be changed outside of the procedure itself.
-		<br><br>
-		len will take a list as its input and output the number of elements in that list; it will only count the outer elements.<br>
-		</p>
-	</div>
-		<div class = subheader>While and For Loops</div>
-			<div class= "Text">
-				<p> A while loop will continue to cycle as long as the condition is True. For example: <br><br>
-				----While [Test Expresstion]:<br>
-				--------Do Something until test is false<br>
-				----Return<br><br>
-				Can also use a "For Loops". These are similar to While loops, but instead of looking for a text condition it will repeat for every element found in the list.<br>
-				< for> <em><b>element</b></em> in < list>:<br>
-				----< block><br><br>
-				example:<br><br>
-				def sum_list(numbers):<br>
-			    	i = 0<br>
-			    	for item in numbers:<br>
-       		 		i = i + item<br>
-   				return i<br>
-				<br>
-   				print sum_list([1, 7, 4])<br>
-   				#>>> 12<br><br>
-   				Elements in a list will have an index location, starting with 0.<br>
-   				< list>.index(< value>)<br>
-   				If the value is in the list it will return the index location of the first instance of that value, otherwise it will return an error.
-   				<br><br>
-   				< value> in < list><br>
-   				Or could use "not in"<br>
-   				If the value is in the list the output is True, otherwise it is False.<br>
-   				</p>
-				<p><a href = "#Top">TOP</a></p>
-			</div>
+		<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+		<div class= "header">
+			Lists
 		</div>
-</div>
-
-<div class = header ID = "ProblemSolving">Problem Solving</div>
-	<div class= "Text">
-		<p><ol>
-			<li>What are the inputs?
-			<li>What are the outputs?
-			<li>Solve the problem.
-			<li> Don't optimize premeturely, keep it simple at the start!
-			<li> Develop (and test!) incrementally as you go.
-		</ol>
-		Advantage of a helper procedure is that you can re-use it for other procedures and also test it separately. It can be helpful to use an Assertion for testing using the following syntax:<br><br>
-		assert [expression] < result><br><br>
-		<p><a href = "#Top">TOP</a></p>
-
-
-	</body>
-
+		<!--The text class contains all text or paragraphs in the document entered-->
+		<div class= "Text">
+			<p>A list (called an array in other programming languages) is a tool that can be used to store multiple pieces of information at once. It can also be defined as a variable containing multiple other variables. A list consists of a numbers paired with items. Each item can be retrieved by its paired number. List blocks can be found in the Data blocks palette.</p>
+			<h2>Items</h2>
+			<p>Items can be added to or deleted from a list manually or by programming. Holding down shift and pressing enter on a list results in an entry above the previously selected entry. new They can also be added by right clicking the list, clicking <b>'import'</b>, and selecting a plain .txt or Comma Separated Values file. Each line in the file will be an item in the list. They can also be exported in the same way.</p>
+			<!--The label lists utliza to give an order to the connections and helps the code more understandable and orderly-->
+			<ul>
+				<li>
+					<p><b>list1 = []     #A new empty list</b></p>
+				</li>
+				<li>
+					<p><b>list2 = [1, 2, 3, "cat"]     #A new non-empty list with mixed item types</b></p>
+				</li>
+			</ul>
+		</div>
+</body>
 </html>
