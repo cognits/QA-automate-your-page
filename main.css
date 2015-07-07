@@ -1,0 +1,46 @@
+/*CSS code*/
+body {
+	padding: 20px 10px;
+	font-size: 14px;
+	background-color: #c5c5c5;
+	max-width: 800px;
+	text-align: center;
+	margin: auto;
+	font-family:'Source Sans Pro', sans-serif;
+}
+/*Format of titles for items*/
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: white;
+	line-height: 1.8;
+	padding: 10px;
+	margin: 25px auto;
+}
+/*format of list*/
+li {
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 1.6;
+	color: black;
+}
+/*size of image*/
+img {
+	width:40%;
+	height: auto;
+}
+/*Format of definition of items */
+.definition {
+	font-size: 14px;
+	line-height: 1.8;
+	background-color: #0076eb;
+	color: black;
+	padding: 10px;
+	margin: 10px auto;
+}
+/*tips for good work for each item*/
+.tips{
+	background-color: #00ffbf;
+	padding: 10px;
+	margin: 10px auto;
+}
