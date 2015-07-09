@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--This is a comment.  Computers don't read this.  Useful to remind yourself why you did something or for others looking at your code-->
+<html>
+<head>
+	<meta charset="UTF-8"><!--This has something to do with how browsers work-->
+	<link rel="stylesheet" href="chasePopkoFowlerUdacityNano.css"><!--To link to CSS file-->
+	<title>Nano Notes - chasepf</title><!--This is what appears on browser tab-->
+</head>
+<body>
+	<h1>Nano Notes - chasepf</h1>
+	<div class="TOC">
+		<h2>Table of Contents</h2>
+		<ol class="nobullet">
+			<li><a href="#topic-1">Lesson 1 - The web and HTML</a>
+			<ul>
+				<li><a href="#topic-1-1">What is the web?</a>
+				<li><a href="#topic-1-2">What is coding?</a>
+				<li><a href="#topic-1-3">Computers ain't dat bright</a>
+				<li><a href="#topic-1-4">Inline vs Block</a>
+				<li><a href="#topic-1-5">Think like a programmer</a>
+				<li><a href="#topic-1-6">HTML Stuff</a>
+			</ul>
+			<li><a href="#topic-1">Lesson 2 - Creating a structured document with HTML</a>
+			<ul>
+				<li><a href="#topic-2-1">Tree-like structure of HTML</a>
+				<li><a href="#topic-2-2">Indented HTML and boxes</a>
+				<li><a href="#topic-2-3">Text Editors</a>
+				<li><a href="#topic-2-4">Additional stuff</a>
+			</ul>
+			<li><a href="#topic-1">Lesson 3 - Addding CSS to HTML</a>
+			<ul>
+				<li><a href="#topic-3-1">Avoiding repetition</a>
+				<li><a href="#topic-3-2">What is CSS?</a>
+				<li><a href="#topic-3-3">Boxes, boxes, and boxes</a>
+				<li><a href="#topic-3-4">Code, test, refine</a>
+			</ul>
+			<li><a href="#ser_pro1">Intro to Serious Programming</a></li>
+			<ul>
+				<li><a href="#ser_pro2">What is a computer?</a></li>
+				<li><a href="#ser_pro3">Computer Program</a></li>
+				<li><a href="#ser_pro4">Programming Language</a></li>
+				<li><a href="#ser_pro5">Python</a></li>
+				<li><a href="#ser_pro6">Grammar</a></li>
+				<li><a href="#ser_pro7">Python Expressions</a></li>
+			</ul>
+			<li><a href="#var_string2">Variables and Strings</a
+			></li>
+			<ul>
+				<li><a href="#var_string21">What is a variable?</a></li>
+			</ul>
+			<li><a href="#func1">Functions</a></li>
+			<ul>
+				<li><a href="#func2">What is a function?</a></li>
+				<li><a href="#func3">What is the difference between making and using a function?</a></li>
+				<li><a href="#func4">How doe functions help avoid repetition?</a></li>
+				<li><a href="#func5">What happens when a function doesn't have a return statement?</a></li>
+			</ul>
+			<li><a href="#loops1">If and While Loops</a></li>
+			<ul>
+				<li><a href="#loops2">Using code to make decisions</a></li>
+				<li><a href="#loops4">The 'IF' function</a></li>
+				<li><a href="#loops5">AND and OR</a></li>
+				<li><a href="#loops6">The MAX operator</a></li>
+				<li><a href="#loops7">This is all we need to write programs!</a></li>
+				<li><a href="#loops8">Loops</a></li>
+			</ul>
+			<li><a href="#sdata0">Structured Data</a></li>
+			<ul>
+				<li><a href="#sdata1">Lists</a></li>
+				<li><a href="#sdata2">Mutation</a></li>
+				<li><a href="#sdata3">Aliasing</a></li>
+				<li><a href="#sdata4">Append</a></li>
+				<li><a href="#sdata5">Plus Function</a></li>
+				<li><a href="#sdata6">Len Function</a></li>
+				<li><a href="#sdata7">For Loops</a></li>
+				<li><a href="#sdata8">Indexing Lists</a></li>
+				<li><a href="#sdata9">In Function</a></li>
+			</ul>
+			<li><a href="#prob1">How to Solve Problems</a></li>
+			<li><a href="#bug0">Debugging</a></li>
+		</ol>
+	</div>
+	<div class="topics">
+		<h2 id="topic-1">Lesson 1 - The web and HTML</h2>
+		<div class="concept" id="topic-1-1">
+			<div class="concept-title">
+				What is the web?
+			</div>
+			<div class="concept-description">
+				<p>
+					The web is a giant network of computers that talk to each other using a protocol call HTTP.  A webpage is document written in HTML (HyperTextMarkupLanguage). A web browser is a program that interprets and displays the info.  The main pieces of the web are: users, the net and servers.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-1-2">
+			<div class="concept-title">
+				What is coding?			
+			</div>
+			<div class="concept-description">
+				<p>
+					Coding is writing text in a language that a computer can understand.  If you know how to talk to a computer, you can tell it do anything!  <span class="italic">That's pretty neat</span>!!!
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-1-3">
+			<div class="concept-title">
+				Computers ain't dat bright			
+			</div>
+			<div class="concept-description">
+				<p>
+					Computers are very literal.  They don't intepret the way a human does.  This means one little typo can become a huge problem.  This is an example of 'Technological Empathy'.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-1-5">
+			<div class="concept-title">
+				Inline vs block		
+			</div>
+			<div class="concept-description">
+				<p>
+					Elements are either inline or block.  Block elements form an invisible box around them. This is useful for diving your page up into sections for styling.
+				</p>
+				<p>
+					Examples of <span class="italic">Inline</span> elements: a, span, br, img and strong.
+				</p>
+				<p>
+					Examples of <span class="italic">Block</span> elements: p, form and div. 
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-1-6">
+			<div class="concept-title">
+				Thinking like a programmer		
+			</div>
+			<div class="concept-description">
+				<p>
+					There are too many details to remember.  Focus on the big ideas then know what and how to look up.  <span class="italic">Google to the rescue</span>!!!
+				</p>
+				<p>
+					5 different types of thinking:
+					<ol>
+						<li>Procedural - Creating clear and unambiguous instructions for a computer to follow</li>
+						<li>Abstract - Finding similiarity, or generality, amongst seemingly different things (avoiding repetition)</li>
+						<li>Systematic - Breaking a big problem down into smaller pieces (big-picture and decision-making) and how the pieces fit together</li>
+						<li>Technological Empathy - Understanding how a computer works, what it is, and what it's good and bad at doing (understanding tools)</li>	
+						<li>Debugging - Systematic process of identifying the cause of a computer that doesn't work.  If a program doesn't work, there is a mistake.</li>
+					</ol>
+				<p>
+				Here are the steps to fix the problem<br>
+				1.  Collect evidence (what makes the program fail?)<br>
+				2. Generate theories (what caused this?)<br>
+				3. Test theories (if theory is right, how do I find out?<br>
+				4. Fix the problem
+				</p>
+		</div>
+		<div class="concept" id="topic-1-7">
+			<div class="concept-title">
+				HTML Stuff
+			</div>
+			<div class="concept-description">
+				<p>
+					How an HTML doc is structured<br>
+					&lt;DOCTYPE hmtl&gt;<br>
+					&lt;head&gt;<br>
+					&lt;title&gt;What appears on browser tab&lt;/title&gt;<br>
+					&lt;meta UTF-8&gt;<br>
+					&lt;link rel=&quot;&quot; href=&quot;&quot;/&gt;><br>
+					&lt;/head&gt;
+					&lt;html&gt;<br>
+					&lt;body&gt;<br>
+					&lt;/body&gt;<br>
+					&lt;/html&gt;<br>
+				</p>
+				Other stuff:<br>
+				<br>
+				Tag = &lt;&gt;  &lt;&gt;<br>
+				Element = (&lt;&gt; &quot;&quot; &lt;&gt;)<br>
+				Attribute = property of an HTML element<br>
+				Void tag = no closing tag<br>
+					<ul>
+						<li>example = the &lt;br&gt;</li>
+					</ul>
+				Images don't have a closing tag<br>
+				The internet is the World's largerst network of computers<br>
+				URL = How we reference (address)<br>
+				HTTP = Protocols for transferring data<br>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="topic-2">Lesson 2 - Creating a structured document with HTML</h2>
+		<div class="concept" id="topic-2-1">
+			<div class="concept-title">
+				Tree-like structure of HTML
+			</div>
+			<div class="concept-description">
+				<p>
+					DOM = Tree-like structure.  This means you can have elements inside elements.  <span class="italic">Think of a family tree</span>
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-2-2">
+			<div class="concept-title">
+				Indented HTML and boxes
+			</div>
+			<div class="concept-description">
+				<p>
+					The &quot;wave-like&quot; look of HTML indentations shows the way elements are nested.  The more indented means the more nested the element is.
+				</p>
+				<p>
+					Boxes on boxes on boxes.  HTML is all about about boxes.  View every page you see as boxes.
+			</div>
+		</div>
+		<div class="concept" id="topic-2-3">
+			<div class="concept-title">
+				Text Editors
+			</div>
+			<div class="concept-description">
+				<p>
+					Programmers use special text editors for writing code.  These editors are designed with coding in mind which makes it easier for coders.  Some have really useful features.  An example of this in Sublime Text 2 is that you can use the find feature to find a certain tag and then change all of those tags in the doc in one fell swoop.  A bit like CSS..  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-2-4">
+			<div class="concept-title">
+				Additional stuff
+			</div>
+			<div class="concept-description">
+				<p>
+					HTML = the set<br>
+					CSS = how the set is painted<br>
+					Javascript = how the stage moves<br>
+					Class attributes = lables on boxes<br>
+
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="topic-3">Lesson 3 - Adding CSS to HTML</h2>
+		<div class="concept" id="topic-3-1">
+			<div class="concept-title">
+				Avoiding repetition
+			</div>
+			<div class="concept-description">
+				<p>
+					Avoiding mistakes and consistency: <br>
+					<br>	
+					When doing the same thing over and over it becomes easy to make a mistake.  The benefit of CSS is that it allows you make changes to parts of the document with a few lines of code instead of going through and manually applying the style to each individual line.  For example, with this page, by assinging each lesson and header a class, I'm able to set the style with just one bit of code.  I didn't need to set it each time.  Very, very useful.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-3-2">
+			<div class="concept-title">
+				What is CSS?
+			</div>
+			<div class="concept-description">
+				<p>
+					CSS stands for cascading style sheets.  It is the code that applies the look to the HTML structure.  It cascades throughout the whole document.  Meaning it not only applies to element's that directly match, but element's children as well.  This is inheritance.  If there are multiple rules for a child, the most specific wins.  You link to the CSS file in the head of the html doc.  Put the CSS file and HTML file in the same folder.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="topic-3-3">
+			<div class="concept-title">
+				Boxes, boxes, and boxes
+			</div>
+			<div class="concept-description">
+				<p>
+					Earlier I mentioned to see everything as boxes in HTML.  This is not only helpful in developing structure but it makes it easier to style.  There are 4 components to the boxes: Margin, border, padding and conent.
+				</p>
+				<p>
+					Because there are four components, sizing can be different.  Also, browser display content differently.  This will be important in the future.
+				</p>
+				<p>
+					Display: flex; allows divs to appear next to each other instead of stacked.  Will use this to build a TOC (table of contents)
+					that appears next to the conent.  How do I make it stay static while content moves to make navigation easier?
+				</p>
+				<p>
+					Two techniques: 
+					<ol>
+						<li>use percents instead of pixels</li>
+						<li>boxsizing: border-box</li>
+					</ol>
+				<p>
+			</div>
+		</div>
+		<div class="concept" id="topic-3-4">
+			<div class="concept-title">
+				Code, test, refine
+			</div>
+			<div class="concept-description">
+				<p>
+					The strategy:
+				</p>
+				<ol>
+					<li>Look for natural boxes</li>
+					<li>Look for repeated styles and semantic elements</li>
+					<li>Write HTML</li>
+					<li>Apply style (biggest to smallest)</li>
+					<li>Fix things</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="ser_pro1">Stage 2: Lesson 1 - Intro to "Serious" Programming</h2>
+		<div class="concept" id="ser_pro2">
+			<div class="concept-title">
+				What is a computer?
+			</div>
+			<div class="concept-description">
+				<p>
+					Most machines are designed to with a few functions in mind.  To do more, you'll need to physically alter the machine.
+				</p>
+				<p>
+					Computers are different.  They can be <span class="italic">programmed</span> to do anything we want as long as we can write a program that specifies a specific set of instructions.  This is really, really cool imo.  We are only limited by our creativity and then communicating that idea.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="ser_pro3">
+			<div class="concept-title">
+				Computer Program
+			</div>
+			<div class="concept-description">
+				<p>
+					A program is a precise sequence of steps that a computer can follow to do something useful.  Web browsers, SublimeText 2, games as well as just print statements are examples of programs.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="ser_pro4">
+			<div class="concept-title">
+				Programming Language
+			</div>
+			<div class="concept-description">
+				<p>
+					A programming language is what a programmer uses to tell a computer what to do.  Python is just one of many programming languages.  Why are some languages better for certain tasks?
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="ser_pro5">
+			<div class="concept-title">
+				Python
+			</div>
+			<div class="concept-description">
+				<p>
+					Python is a programming language.  It is a high-level interpreted language.  When you write some code and run it, a Python interpreter converts the code to a set of instructions the computer can understand and execute.  Machine language?
+
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="ser_pro6">
+			<div class="concept-title">
+				Grammar
+			</div>
+			<div class="concept-description">
+				<p>
+					Just as our human languages have grammar, programming languages do too.  A grammar is a specification of what is correct and incorrect.  Understanding the way grammar works may help to increase your speed of learning a new programming language?
+				</p>
+				<p>
+					In English, people often make grammatical errors but we still can get at what they mean.  Computers are literal Larry's, meaning they are not intuitive.  If it isn't grammatically correct the code won't run.  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="ser_pro7">
+			<div class="concept-title">
+				Python Expressions
+			</div>
+			<div class="concept-description">
+				<p>
+					A Python expression is a legal Python statement.  Meaning that the code will run.
+				</p>
+			</div>
+		</div>		
+	</div>
+	<div class="topic">
+		<h2 id="var_string2">Lesson 2 - Variables and Strings</h2>
+		<div class="concept" id="var_string21">
+			<div class="concept-title">
+				What is a variable in Python?
+			</div>
+			<div class="concept-description">
+				<p>
+					Variables are a way to give names to values.  For example:  variable = 2.
+				</p>
+				<p>
+					This example is how you assing a value to a variable.  You can change the value of the variabl later by re-assigning it a diffrerent value.
+				</p>
+				<p>
+					The = sign does not mean the same thing as it does math.  Think of the equals sign as an arrow pointing to the left.
+				</p>
+				<p>
+					Variables are useful in a bunch of ways:
+					<ul>
+						<li>They improve code readability by using names that make sense</li>
+						<li>They allow us to store the value of important data</li>
+						<li>They give us the way to change the value of something</li>
+					</ul>
+				</p>
+				<p>
+					There is a difference between 2 + 2 and "2" + "2"...  Anything with quotes around it is a string (just a sequence of characters).  2 + 2 would equal 4.  "2" + "2" would be "22".  This is what is called concatenation.  It just means joining two strings together.
+				</p>
+				<p>
+					You can't add a string and an integer but you can multiply a string.
+				</p>
+			</div>
+		</div>
+	</div>	
+	<div class="topic">
+		<h2 id="func1">Lesson 3 - Functions</h2>
+		<div class="concept" id="func2">
+			<div class="concept-title">
+				What is a function?
+			</div>
+			<div class="concept-description">
+				<p>
+					A function is something that takes input, does something to that input, and then produces an output.  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="func3">
+			<div class="concept-title">
+				What is the difference between making and using a function?
+			</div>
+			<div class="concept-description">
+				<p>
+					First you need to make a function by using a line of code starting with the keyword <b>def</b> then give the function a name followed by the function parameters in parentheses.  The parameters are replaced by actual values when the function is used (called).
+				</p>
+				<p>
+					Then you specify in the "body" of the function the code that specifies what you want to do with the input parameters.  
+				</p>
+				<p>
+					Next, you call the function by using the print statement followed by the name of the function followed by the values you want to input.  Number of inputs needs to match then number of parameters.  The value of the input is assigned of each parameter name in order and then the block is evaluated.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="func4">
+			<div class="concept-title">
+				How do functions help avoid repetition?
+			</div>
+				<div class="concept-description">
+				<p>
+					Functions are tools that programmers can create and reuse forever.  Once a function, always a function.  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="func5">
+			<div class="concept-title">
+				What happens when a function doesn't have a return statement?
+			</div>
+			<div class="concept-description">
+				<p>
+					The return keyword tells Python what the function should produce as an output.  If there is not return keyword you get >>> None.  No return.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="loops1">Lesson 4 - If and While Loops</h2>
+		<div class="concept" id="loops2">
+			<div class="concept-title">
+				Using code to make decisions
+			</div>
+			<div class="concept-description">
+				<p>
+					In Python we use booleans (true or false) to decide whether or not to execute a block of code.    
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="loops3">
+			<div class="concept-title">
+				The 'if' function
+			</div>
+			<div class="concept-description">
+				<p>
+					The if function will only run if the expression is True.  If the exression is False, the block is skipped.
+				</p>
+				<p>
+					Within the IF function an ELSE statement can be defined.  So if the IF statement is false, then it will run the ELSE block of code.  The ELSE is on the same indentation as the IF.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="loops4">
+			<div class="concept-title">
+				AND and OR
+			</div>
+			<div class="concept-description">
+				<p>
+					You can test to run a block of code if x AND y are True.  Also, you can test if x OR y are True. However, if the first test is True it will not check the second test.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="loops5">
+			<div class="concept-title">
+				The MAX operator
+			</div>
+			<div class="concept-description">
+				<p>
+					You can find out the largest value in a set of inputs using max(a,b,c,d,etc..)
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="loops6">
+			<div class="concept-title">
+				This is all we need to write programs!
+			</div>
+			<div class="concept-description">
+				<p>
+				With all the we've learned so far we could write any computer program.  This means that all of programming breaks down to arithmetic and evaluating these statements.
+			</p>
+			<p>
+				Buuuut, most computer programming is done using pre-programmed procedures that will make it easier to write out bigger pieces of code.
+			</p>
+			</div>
+		</div>
+		<div class="concept" id="loops7">
+			<div class="concept-title">
+				Loops
+			</div>
+			<div class="concept-description">
+				<p>
+					A loop is a way to go over a pieces of code over and over.
+				</p>
+				<p>
+					Here we have the while loop.  This continues to run WHILE the test is True.  Watch out for infinite loops.
+				</p>
+				<p>
+					Break statements give you a way to stop a loop even if the test is True.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="sdata0">Lesson 5 - Structured Data</h2>
+		<div class="concept" id="sdata1">
+			<div class="concept-title">
+				Lists
+			</div>
+			<div class="concept-description">
+				<p>
+					Lists are similar to strings, however strings a limited to text data.  Lists can contain any kind of data.  Lists can contain strings, numbers, lists or a combo of everything.  Instead of using quotes to contain the data you use the square brackets dividing each element with a comma.	
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata2">
+			<div class="concept-title">
+				Mutation
+			</div>
+			<div class="concept-description">
+				<p>
+					Mutation means you're able to change the value of a list after it has been created.  Strings are not mutable.  This is an advantage of lists.
+				</p>
+			</div>
+		<div class="concept" id="sdata3">
+			<div class="concept-title">
+				Aliasing
+			</div>
+			<div class="concept-description">
+				<p>
+					Aliasing is when you have 2 seperate names that refer to the same object.  If you change one, you change the other.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata4">
+			<div class="concept-title">
+				Append 
+			</div>
+			<div class="concept-description">
+				<p>
+					The append function will add ONE element to the end of a list.  This means it mutates the list it is invoked upon.  It does not create a new list.  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata5">
+			<div class="concept-title">
+				Plus function
+			</div>
+			<div class="concept-description">
+				<p>
+					You can concantenate lists resulting in a new list of the concantenated lists.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata6">
+			<div class="concept-title">
+				Len Function
+			</div>
+			<div class="concept-description">
+				<p>
+					The LEN operator returns the length of a string or list.  It returns the number of elements in a string and for lists it will return the number of elements.  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata7">
+			<div class="concept-title">
+				For Loops
+			</div>
+			<div class="concept-description">
+				<p>
+					A for loop runs a block of code for each element in a list until all the elements have been evalutated.  
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata8">
+			<div class="concept-title">
+				Indexing Lists
+			</div>
+			<div class="concept-description">
+				<p>
+					If you search for a value it returns the first occurence in the list.   
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="sdata9">
+			<div class="concept-title">
+				In function
+			</div>
+			<div class="concept-description">
+				<p>
+					This is a boolean operator?  It will let you know if the value is in the list or not.  
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="prob1">How to solve problems</h2>	
+		<div class="concept" id="prob2">
+			<div class="concept-title">
+				The five steps for solving problems!
+			</div>
+			<div class="concept-description">
+				<p>
+					<ol>
+						<li>Don't panic!</li>
+						<li>What are the inputs?</li>
+						<li>What are the outputs?</li>
+						<li>Solve the problem!</li>
+						<li>Simple mechanical solution (Don't optimize prematurely)</li>
+						<li>Develop solution in incrementally small steps to test as you go</li>
+					</ol>
+				  Remember that making progress is good!
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="topic">
+		<h2 id="bug0">Debbugging</h2>
+		<div class="concept" id="bug1">
+			<div class="concept-title">
+				The overview
+			</div>
+			<div class="concept-description">
+				<p>
+					Debugging is a scientific process of examining code to discover things you didn't expect.  
+				</p>
+				<p>
+					It isn't just correcting errors or learning how mistakes were made.
+				</p>
+				<p>
+					It's unavoidable so its important to develop systems to solve problems.
+				</p>
+				<p>
+					1.  Examine error messages when programs crash.  The last line tells you what wrong.  Read backwards to learn more about the problem.  Google will be your friend.
+				</p>
+				<p> 
+					2.  Work from example code.  If modified code doesn't work, commet it out and do step-by-step modifications.
+				</p>
+				<p>
+					3.  Make sure examples work.  Check to see if runs properly.
+				</p>
+				<p>
+					4.  Check (print) immediate results.  When code doesn't crash, but doesn't do what's intended, use print statements to find out why.
+				</p>
+				<p>
+					5.  Keep and compare old versions.  When you have a working version of code, save it before adding more code.  This gives you something to come back to.
+
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
