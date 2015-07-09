@@ -8,6 +8,7 @@ HTML_HEAD = """
     <head>
         <meta charset="UTF-8">
         <title>Generator</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 """
 
